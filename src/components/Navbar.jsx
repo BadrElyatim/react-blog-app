@@ -7,6 +7,7 @@ function Navbar() {
     const [isOpened, setIsOpened] = useState(false)
 
     function toggleNavbar() {
+        document.body.classList.toggle('overflow-hidden')
         setIsOpened((isOpened) => !isOpened)
     }
     return (
